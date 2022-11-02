@@ -1,0 +1,10 @@
+<?php  
+	$con = mysqli_connect("localhost","root","");
+
+	if(!$con){
+		die(mysqli_connect_error());
+	}else{
+		echo "Connected Successfully";
+	}
+	mysqli_close($con);
+?>
